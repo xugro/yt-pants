@@ -9,7 +9,6 @@
 			for(const element of tabs){
 				console.log(element);
 			}
-
 			if(tabs.length == 0){
 				loop();
 			}
