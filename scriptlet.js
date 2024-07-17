@@ -2,7 +2,7 @@
 /// alias yt-pants.js
 (function() {
 	let needle = "{{1}}";
-	console.log(needle);
+//	console.log(needle);
 //	console.log("injection successful");
 	(function loop(){
 		setTimeout(() => {
@@ -15,7 +15,7 @@
 //				console.log(channelname);
 				if(channelname.length >= 1){
 					if(channelname[0] == "@"){
-						console.log("Channel detected: " + channelname);
+//						console.log("Channel detected: " + channelname);
 						if(needle == "{{1}}"){
 							flag = true;
 						}else if(channelname == "@" + needle){
