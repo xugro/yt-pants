@@ -12,6 +12,6 @@
 			if(tabs.length == 0 && count < 5){ //only attempt 5 times as it loops outside a channel page
 				loop(count + 1);
 			}
-		}, 100);
+		}, 500);
 	})();
 })();
