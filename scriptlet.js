@@ -9,10 +9,20 @@
 			var flag = false;
 			const path = window.location.pathname;
 			const components = path.split("/");
-			console.log(components);
+//			console.log(components);
 			if(components.length >= 2){
 				const channelname = components[1];
-				console.log(channelname);
+//				console.log(channelname);
+				if(channelname.length >= 1){
+					if(channelname[0] == "@"){
+						console.log("Channel detected: " + channelname);
+						if(needle == "{{1}}"){
+							flag = true;
+						}else if(channelname == "@" + needle){
+							flag = true;
+						}
+					}
+				}
 			}
 			if(flag == true){
 				var tabs = document.getElementsByClassName("yt-tab-shape-wiz");
