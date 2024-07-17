@@ -2,9 +2,17 @@
 /// alias yt-pants.js
 (function() {
 	console.log("injection successful");
-	var tabs = document.getElementsByClassName("yt-tab-shape-wiz");
-	console.log("Loaded " + tabs.length + " tabs");
-	for(const element of tabs){
-		console.log(element);
-	}
+	(function loop(){
+		setTimeout(() => {
+			var tabs = document.getElementsByClassName("yt-tab-shape-wiz");
+			console.log("Loaded " + tabs.length + " tabs");
+			for(const element of tabs){
+				console.log(element);
+			}
+
+			if(tabs.length == 0){
+				loop();
+			}
+		}, 100);
+	})();
 })();
