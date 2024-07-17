@@ -10,7 +10,7 @@
 				console.log(element);
 				for(const child of element.children){
 					if(child.innerText == "Videos"){
-						child.innetText = "Pants";
+						child.innerText = "Pants";
 					}
 				}
 			}
