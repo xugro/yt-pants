@@ -1,6 +1,8 @@
 /// youtube-pants.js
 /// alias yt-pants.js
 (function() {
+	let needle = "{{1}}";
+	console.log(needle);
 //	console.log("injection successful");
 	(function loop(){
 		setTimeout(() => {
