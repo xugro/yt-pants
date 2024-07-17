@@ -6,7 +6,7 @@ Runs every 500ms on every youtube page (three times on every youtube page for my
 ## Usage
 Add the raw file URL to `userResourcesLocation`.
 
-Please use `https://raw.githubusercontent.com/xugro/yt-pants/3300a8c7fdb7e678b4fabc9096d0556f0f5f1a00/scriptlet.js` as the URL so any changes in the future don't affect your device. This is a security step in case someone gets access to my account and doesn malicious modifications to the code.
+Please use `https://raw.githubusercontent.com/xugro/yt-pants/3300a8c7fdb7e678b4fabc9096d0556f0f5f1a00/scriptlet.js` as the URL so any changes in the future don't affect your device. This is a security step in case someone gets access to my account and does malicious modifications to the code.
 
 To add the raw file URL, change the line that has `userResourcesLocation unset` by default to `userResourcesLocation https://raw.githubusercontent.com/xugro/yt-pants/3300a8c7fdb7e678b4fabc9096d0556f0f5f1a00/scriptlet.js` in the advanced settings in uBlock Origin.
 
