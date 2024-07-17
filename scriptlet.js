@@ -7,12 +7,14 @@
 	(function loop(){
 		setTimeout(() => {
 			var flag = false;
-			if(needle != "{{1}}"){
-				const path = window.location.pathname;
-				const components = path.split("/");
-				console.log(components);
+			const path = window.location.pathname;
+			const components = path.split("/");
+			console.log(components);
+			if(components.length >= 2){
+				const channelname = components[1];
+				console.log(channelname);
 			}
-			if(needle == "{{1}}" || flag == true){
+			if(flag == true){
 				var tabs = document.getElementsByClassName("yt-tab-shape-wiz");
 //				console.log("Loaded " + tabs.length + " tabs");
 				for(const element of tabs){
