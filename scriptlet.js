@@ -9,7 +9,8 @@
 			var flag = false;
 			if(needle != "{{1}}"){
 				const path = window.location.pathname;
-				console.log(path);
+				const components = path.split("/");
+				console.log(components);
 			}
 			if(needle == "{{1}}" || flag == true){
 				var tabs = document.getElementsByClassName("yt-tab-shape-wiz");
